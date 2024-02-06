@@ -4,10 +4,10 @@ import pandas as pd
 import pickle
 
 # Carregue o modelo treinado
-with open('../models/model_2024-02-05_19-39-24.pkl', 'rb') as model_file:
+with open('/models/model_2024-02-05_19-39-24.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
 
-with open('../models/model2.csv', 'rb') as csv_file:
+with open('/models/model2.csv', 'rb') as csv_file:
     df_model = pd.read_csv(csv_file)
 
 app = Flask(__name__)
