@@ -46,4 +46,4 @@ def process_payload():
     return jsonify(result)  # Use tolist() para garantir que o resultado seja serializável
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
