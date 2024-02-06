@@ -12,8 +12,8 @@ def map_names_to_ids(selected_names, name_id_mapping):
 st.title("Previsão do Modelo")
 
 # Suponha que você tenha um dataframe champs com as colunas "name" e "id"
-champs = pd.read_csv("output_etl/champs_output_etl.csv")
-participants = pd.read_csv("output_etl/participants_output_etl.csv")
+champs = pd.read_csv("/opt/render/project/src/output_etl/champs_output_etl.csv")
+participants = pd.read_csv("/opt/render/project/src/output_etl/participants_output_etl.csv")
 
 # Inputs para coletar dados do usuário
 positions = st.selectbox("Escolha 5 roles:", list(participants["position"].unique()))
@@ -41,7 +41,7 @@ if st.button("Fazer Previsão"):
     st.write("Conteúdo do payload:", payload)
 
     # Fazer uma solicitação POST para a API
-    response = requests.post("http://127.0.0.1:5000/predict", json=payload)
+    response = requests.post("https://api-predict-ickm.onrender.com/predict", json=payload)
 
     # Exibir resultado da previsão
     if response.status_code == 200:
