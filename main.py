@@ -13,10 +13,10 @@ st.title("Previsão do Modelo")
 
 # Suponha que você tenha um dataframe champs com as colunas "name" e "id"
 champs = pd.read_csv("/opt/render/project/src/output_etl/champs_output_etl.csv")
-participants = pd.read_csv("/opt/render/project/src/output_etl/participants_output_etl.csv")
+#participants = pd.read_csv("/opt/render/project/src/output_etl/participants_output_etl.csv")
 
 # Inputs para coletar dados do usuário
-positions = st.selectbox("Escolha 5 roles:", list(participants["position"].unique()))
+positions = st.selectbox("Escolha 5 roles:", ['TOP','JUNGLE', 'MID', 'BOT'])
 bans = st.multiselect("Escolha 3 bans:", list(champs["name"].unique()))
 pick = st.selectbox("Escolha 1 pick:", list(champs["name"].unique()))
 
