@@ -1,11 +1,10 @@
 from flask import Flask, request, jsonify
 import numpy as np
 import pandas as pd
-import pickle
+import tensorflow as tf
 
 # Carregue o modelo treinado
-with open('/opt/render/project/src/models/model_2024-02-05_19-39-24.pkl', 'rb') as model_file:
-    model = pickle.load(model_file)
+model = tf.keras.models.load_model('/opt/render/project/src/models/model.h5')
 
 with open('/opt/render/project/src/models/model2.csv', 'rb') as csv_file:
     df_model = pd.read_csv(csv_file)
