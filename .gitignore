@@ -1,0 +1,14 @@
+.env
+.env-p60
+env/
+face_verification/documents/
+**/__pycache__/
+__pycache__/
+*.py[cod]
+routers/__pycache__/
+server/__pycache__/
+utils/__pycache__/
+*/__pycache__/
+crops_temp/
+data/
+
