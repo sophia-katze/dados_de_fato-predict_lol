@@ -1,4 +1,4 @@
-# Previsão de uma partida de Leagueof Legends
+# Previsão de uma partida de League of Legends
 
 Este projeto, de autoria de  Mário Vasconcelos e Sophia Helena de Paula, faz parte do desafio da comunidade Dados de Fato, cujo tema é: "Jogos Digitais".
 
