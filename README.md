@@ -1,6 +1,6 @@
 # Previsão de uma partida de League of Legends
 
-Este projeto, de autoria de  Mário Vasconcelos e Sophia Helena de Paula, faz parte do desafio da comunidade Dados de Fato, cujo tema é: "Jogos Digitais".
+Este projeto, de autoria de  Mário Vasconcelos e Sophia Katze de Paula, faz parte do desafio da comunidade Dados de Fato, cujo tema é: "Jogos Digitais".
 
  Consiste de  uma aplicação Streamlit que permite ao usuário fazer previsões usando um modelo de aprendizado de máquina. O usuário pode selecionar posições, escolher personagens para banir e escolher um personagem para jogar. A aplicação então faz uma solicitação para uma API que retorna a previsão do modelo.
 
